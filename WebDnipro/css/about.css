@@ -1,0 +1,41 @@
+
+.main .about{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;
+}
+
+.main .about hr{
+    width: 400px;
+}
+
+.main .about h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.about .about-container{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.about .about-container img{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 3px;
+}
+.about .about-container p{
+    text-align: justify;
+    padding: 0 15px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+.about .about-container p:first-child{
+    margin: 10px 0 5px;
+}

@@ -1,0 +1,115 @@
+.main .contact{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;
+    text-transform: uppercase;    
+}
+
+.main .contact hr{
+    width: 400px;
+}
+
+.main .contact h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact-cotainer .info{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-cotainer .info .l1{
+    width: 50%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.contact-cotainer .info .l2{
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.l2 a{
+    color: darkblue;
+    font-weight: 700;
+}
+
+.l2 a:hover{
+    text-decoration: underline;
+}
+
+/*
+    
+    contact-form
+
+*/
+
+.main .contact-form{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;  
+}
+
+.main .contact-form hr{
+    width: 400px;
+}
+
+.main .contact-form h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.main .contact-form p{
+    margin: 5px 0 20px;
+}
+
+/*
+    form
+*/
+
+.contact-cotainer-form{
+    padding: 20px;  
+    text-align: left;
+}
+
+.contact-cotainer-form .form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.contact-cotainer-form .form-inputs input, textarea{
+    padding: 3px;
+    font-size: 1.1em;
+    margin: 9px;
+}
+
+.contact-cotainer-form .form-inputs input{
+    width: 270px;
+}
+
+.contact-cotainer-form .form-inputs label{
+    margin: 0 9px;
+}
+
+.form-inputs div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.contact-cotainer-form .links{
+    padding: 5px 25px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
