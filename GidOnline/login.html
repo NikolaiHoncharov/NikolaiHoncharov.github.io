@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вход</title>
+    <meta name="description" content="GidOnline - мы самый лучший онлайн кинотеатр!. Онлайн ресурс для просмотра фильмов и сериалов.">
+    <meta property="og:title" content=Вход>
+    <meta property="og:type" content="article">
+    <meta name="keywords" content="GidOnline, Онлайн сериалы, Онлайн смотреть фильмы">
+    <meta property="og:description" content="GidOnline - мы самый лучший онлайн кинотеатр!. Онлайн ресурс для просмотра фильмов и сериалов.">
+    <meta property="og:url" content="https://GidOnline.net">
+    <link rel="icon" href="image/ServiceImg/h-logo.png" type="image/x-icon">
+    <link href="style/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <!--[if lt IE 9]>
+     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body id="top">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href='/'><img src="image/ServiceImg/gidonline.png" title="GidOnline - самый лучший онлайн кинотеатр!" alt=""></a>
+            </div>
+            <div class="navigation">
+                <div class="search">
+                    <form action="/" id="search" method="post">
+                        <input type="text" name="inputSearch" id="inputSearch" title="Search" class="inputSearch" placeholder="Поиск по сайту...">
+                        <input id="btnSearch" type="submit" name="submit" class="btnSearch" value=" Поиск">
+                    </form>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a class="item-nav" href="/Home/newsMovie">Новинки</a><span>|</span></li>
+                        <li><a href="#" class="item-nav">Премьеры</a><span>|</span></li>
+                        <li><a href="#" class="item-nav">Навигатор</a><span>|</span></li>
+                        <li> <a class="item-nav" href="/Home/random">Случайные</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="login">
+        <div class="container-login">
+
+
+            <form action="/Account/Login" method="post">
+                <h2>Вход</h2>
+                <input name="__RequestVerificationToken" type="hidden" value="B4mB5o8e3QALz3iiAdPjoDgUeZ6KlkYn2ujWvhIQWsiktUQq_hK5gH5OqurSK2F-qJBxxUHuFU33P1ABlg19xfRUa5JV5Sp7WW80sS1u3bk1" />            <div class="form-login">
+                    <p></p>
+                    <div class="form-group">
+                        <label class="control-label" for="Name">Логин</label>
+                        <div class="col-md-10">
+                            <input autocomplete="off" class="form-control text-box single-line" data-val="true" data-val-required="Требуется поле Логин." id="Name" name="Name" type="text" value="" />
+                            <p> <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="Password">Пароль</label>
+                        <div class="col-md-10">
+                            <input class="form-control text-box single-line password" data-val="true" data-val-required="Требуется поле Пароль." id="Password" name="Password" type="password" value="" />
+                            <p> <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Вход" class="btn form-link" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="login-link">
+                <a class="form-link" href="/Account?Length=4">На главную</a>
+                <a class="form-link" href="/Account/Register?Length=7">Регистрация</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="info">
+                <p> ©&nbsp;<a href='/'>GidOnline</a> - мы самый лучший онлайн кинотеатр!</p>
+            </div>
+            <div class="info-link">
+                <p>
+                    <a href="/Home/Faq">Пользователю</a> ♦ <a href="/Home/Rights">Правообладателям</a> ♦ <a href="/Home/Contact">Контакты</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="btn-top"><a href="#top"><img src="image/ServiceImg/up-arrow.svg" alt=""></a></div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+</body>
+</html>

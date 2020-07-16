@@ -1,274 +1,286 @@
+﻿
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="GidOnline - твой гид в мире кино. Онлайн ресурс для просмотра фильмов и сериалов.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GidOnline - мы самый лучший онлайн кинотеатр!</title>
+    <meta name="description" content="GidOnline - мы самый лучший онлайн кинотеатр!. Онлайн ресурс для просмотра фильмов и сериалов.">
+    <meta property="og:title" content=GidOnline - мы самый лучший онлайн кинотеатр!>
+    <meta property="og:type" content="article">
     <meta name="keywords" content="GidOnline, Онлайн сериалы, Онлайн смотреть фильмы">
-    <title>GidOnline</title>
+    <meta property="og:description" content="GidOnline - мы самый лучший онлайн кинотеатр!. Онлайн ресурс для просмотра фильмов и сериалов.">
+    <meta property="og:url" content="https://GidOnline.net">
     <link rel="icon" href="image/ServiceImg/h-logo.png" type="image/x-icon">
+    <link href="style/jquery.bxslider.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
+
+
     <!--[if lt IE 9]>
-        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body>
+<body id="top">
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="image/ServiceImg/gidonline.png" title="GidOnline" alt=""></a>
+                <a href='/'><img src="image/ServiceImg/gidonline.png" title="GidOnline - самый лучший онлайн кинотеатр!" alt=""></a>
             </div>
             <div class="navigation">
                 <div class="search">
-                    <form method="get" name="search" id="search" action="#">
-                        <input type="text" name="inputSearch" id="inputSearch" title="Search" class="inputSearch" placeholder="Поиск...">
-                        <input id="btnSearch" title="Search" type="submit" name="submit" class="btnSearch" value=" Поиск">
+                    <form action="/" id="search" method="post">
+                        <input type="text" name="inputSearch" id="inputSearch" title="Search" class="inputSearch" placeholder="Поиск по сайту...">
+                        <input id="btnSearch" type="submit" name="submit" class="btnSearch" value=" Поиск">
                     </form>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#" class="item-nav">Новинки</a><span>|</span></li>
+                        <li><a class="item-nav" href="/Home/newsMovie">Новинки</a><span>|</span></li>
                         <li><a href="#" class="item-nav">Премьеры</a><span>|</span></li>
                         <li><a href="#" class="item-nav">Навигатор</a><span>|</span></li>
-                        <li><a href="#" class="item-nav">Случайные</a></li>
+                        <li> <a class="item-nav" href="/Home/random">Случайные</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+
+
+
     <section class="premiere">
-       <div class="container">
-           <a href="movie.html"  class="card ">
-               <img src="image/1.jpg" title="image" alt="">
-               <p>Имя фильма</p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/2.jpg" title="image" alt="">
-               <p>Красотка на всю голову</p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/3.jpg" title="image" alt="">
-               <p>Имя фильма </p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/4.jpg" title="image" alt="">
-               <p>Имя фильма</p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/5.jpg" title="image" alt="">
-               <p>Имя фильма</p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/6.jpg" title="image" alt="">
-               <p>Имя фильма</p>
-           </a>
-           
-           <a href="movie.html"  class="card ">
-               <img src="image/7.jpg" title="image" alt="">
-               <p>Имя фильма</p>
-           </a>
-           
-       </div>
-    </section>
-    
-    <section class="genre">
-       <div class="container">
-           <div>
-               <a href="#">вестерн</a>
-               <a href="#">история</a>
-               <a href="#">семейный</a>
-           </div> 
-           <div>
-               <a href="#">биография</a>
-               <a href="#">комедия</a>
-               <a href="#">сериалы</a>
-           </div>
-           <div>
-               <a href="#">боевик</a>
-               <a href="#">криминал</a>
-               <a href="#">спорт</a>
-           </div>
-           <div>
-               <a href="#">военный</a>
-               <a href="#">мелодрама</a>
-               <a href="#">триллер</a>
-           </div>
-           <div>
-               <a href="#">детектив</a>
-               <a href="#">музыка</a>
-               <a href="#">ужасы</a>
-           </div>
-           <div>
-               <a href="#">драма</a>
-               <a href="#">мультфильм</a>
-               <a href="#">фэнтези</a>
-           </div>
-           <div class="item7">
-               <a href="#">документальный</a>
-               <a href="#">приключения</a> 
-               <a href="#">фантастика</a>
-           </div>
-       </div>
-    </section>
-    
-    
-    
-    <section class="content-main">
         <div class="container">
-           
-                <a href="movie.html" class="card">
-                    <img src="image/1.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-            
-            <a href="movie.html" class="card">
-                    <img src="image/7.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/2.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/3.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/4.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/5.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                
-                <a href="movie.html" class="card">
-                    <img src="image/6.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                 <a href="movie.html" class="card">
-                    <img src="image/7.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/5.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/2.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                
-                <a href="movie.html" class="card">
-                    <img src="image/3.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/7.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/2.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/1.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                
-                <a href="movie.html" class="card">
-                    <img src="image/3.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-                
-                <a href="movie.html" class="card">
-                    <img src="image/1.jpg" alt="">
-                    <p>Название фильма</p>
-                    <p>Год выпуска: <span> 2018 </span></p>
-                </a>
-            <div>Переходы по страницам 1 2 3 4 ... 100</div>
-            
+            <ul class="bxslider ">
+                <li class="card">
+                    <a href='/Home/Movie/1' class="card ">
+                        <img img src=image/LogoMovieImg/7ac196477_200x300.jpg alt=8 подруг Оушена>
+                        <p>8 подруг Оушена</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/2' class="card ">
+                        <img img src=image/LogoMovieImg/cb8f66329_200x300.jpg alt=Дэдпул 2>
+                        <p>Дэдпул 2</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/27' class="card ">
+                        <img img src=image/LogoMovieImg/8340bf316_200x300.jpg alt=Логово Монстра>
+                        <p>Логово Монстра</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/28' class="card ">
+                        <img img src=image/LogoMovieImg/1.jpg alt=Талли>
+                        <p>Талли</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/30' class="card ">
+                        <img img src=image/LogoMovieImg/8162d28e0_200x300.jpg alt=Инсомния>
+                        <p>Инсомния</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/31' class="card ">
+                        <img img src=image/LogoMovieImg/cef6ce5d7_200x300.jpg alt=Темная Вселенная>
+                        <p>Темная Вселенная</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/33' class="card ">
+                        <img img src=image/LogoMovieImg/cef6ce5d17_200x300.jpg alt=Славные пташки>
+                        <p>Славные пташки</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/34' class="card ">
+                        <img img src=image/LogoMovieImg/cef6c1e5d17_200x300.jpg alt=Реинкарнация>
+                        <p>Реинкарнация</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href='/Home/Movie/35' class="card ">
+                        <img img src=image/LogoMovieImg/18d7476242_200x300.jpg alt=Команда &#171;Мстители&#187;>
+                        <p>Команда &#171;Мстители&#187;</p>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="right"> 
-           <div class="open">
-               <button type="button" class="btn btn-Enter">Вход</button>
-               <button type="button" class="btn btn-Registr">Регистрация</button>
-           </div>
-           <div class="cinema">
-               <div class="now-cinema">
-                   <h2>Сегодня в кино <img src="image/ServiceImg/Arrow.png" alt=""></h2>
-               </div>
-               <a href="#card" class="card">
-                   <div>
-                       <img src="image/3.jpg" alt="">
-                       <p>Название фильма</p>
-                   </div>
-               </a>
-               
-               <a href="#card" class="card">
-                   <div>
-                       <img src="image/2.jpg" alt="">
-                       <p>Название фильма</p>
-                   </div>
-               </a>
-               
-               <a href="#card" class="card">
-                   <div>
-                       <img src="image/4.jpg" alt="">
-                       <p>Название фильма</p>
-                   </div>
-               </a>
-               
-               <a href="#card" class="card">
-                   <div>
-                       <img src="image/6.jpg" alt="">
-                       <p>Название фильма</p>
-                   </div>
-               </a>
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            moveSlides: 1,
+            slideMargin: 10,
+            infiniteLoop: true,
+            slideWidth: 500,
+            minSlides: 7,
+            maxSlides: 9,
+            speed: 800
+        });
+    });
+    </script>
+
+    <section class="genre">
+        <div class="container">
+            <div>
+                <a href="">Вестерн</a>
+                <a href="">История</a>
+                <a href="">Семейный</a>
+            </div>
+            <div>
+                <a href="">Биография</a>
+                <a href="">Комедия</a>
+                <a href="">Сериалы</a>
+            </div>
+            <div>
+                <a href="">Боевик</a>
+                <a href="">Криминал</a>
+                <a href="">Спорт</a>
+            </div>
+            <div>
+                <a href="">Военный</a>
+                <a href="">Мелодрама</a>
+                <a href="">Триллер</a>
+            </div>
+            <div>
+                <a href="">Детектив</a>
+                <a href="">Музыка</a>
+                <a href="">Ужасы</a>
+            </div>
+            <div>
+                <a href="">Драма</a>
+                <a href="">Мультфильм</a>
+                <a href="">Фэнтези</a>
+            </div>
+            <div class="item7">
+                <a href="">Документальный</a>
+                <a href="">Приключения</a>
+                <a href="">Фантастика</a>
             </div>
         </div>
     </section>
+
+    <section class="content-main">
+        <div class="container">
+            <a href='/Home/Movie/37' class="card ">
+                <img img src=image/LogoMovieImg/6.jpg alt=Кодекс Готти>
+                <p class="name-movie">Кодекс Готти</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/36' class="card ">
+                <img img src=image/LogoMovieImg/af23a2932d30_200x300.jpg alt=Ты водишь!>
+                <p class="name-movie">Ты водишь!</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/35' class="card ">
+                <img img src=image/LogoMovieImg/18d7476242_200x300.jpg alt=Команда &#171;Мстители&#187;>
+                <p class="name-movie">Команда &#171;Мстители&#187;</p>
+                <p><span class="age-prem"> 2013 </span></p>
+            </a>
+            <a href='/Home/Movie/34' class="card ">
+                <img img src=image/LogoMovieImg/cef6c1e5d17_200x300.jpg alt=Реинкарнация>
+                <p class="name-movie">Реинкарнация</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/33' class="card ">
+                <img img src=image/LogoMovieImg/cef6ce5d17_200x300.jpg alt=Славные пташки>
+                <p class="name-movie">Славные пташки</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/31' class="card ">
+                <img img src=image/LogoMovieImg/cef6ce5d7_200x300.jpg alt=Темная Вселенная>
+                <p class="name-movie">Темная Вселенная</p>
+                <p><span class="age-prem"> 2017 </span></p>
+            </a>
+            <a href='/Home/Movie/30' class="card ">
+                <img img src=image/LogoMovieImg/8162d28e0_200x300.jpg alt=Инсомния>
+                <p class="name-movie">Инсомния</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/28' class="card ">
+                <img img src=image/LogoMovieImg/1.jpg alt=Талли>
+                <p class="name-movie">Талли</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/27' class="card ">
+                <img img src=image/LogoMovieImg/8340bf316_200x300.jpg alt=Логово Монстра>
+                <p class="name-movie">Логово Монстра</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/2' class="card ">
+                <img img src=image/LogoMovieImg/cb8f66329_200x300.jpg alt=Дэдпул 2>
+                <p class="name-movie">Дэдпул 2</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+            <a href='/Home/Movie/1' class="card ">
+                <img img src=image/LogoMovieImg/7ac196477_200x300.jpg alt=8 подруг Оушена>
+                <p class="name-movie">8 подруг Оушена</p>
+                <p><span class="age-prem"> 2018 </span></p>
+            </a>
+
+            <div class="nav-bnt">
+                <a class="link-page" href="/?page=1">1</a><a class="link-page link-page-avtive " href="/?page=2">2</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="open">
+                <a class="btn btn-Enter" href="/Account/Login">Вход</a><a class="btn btn-Registr" href="/Account/Register">Регистрация</a><a class="btn btn-Exit" href="/Account/Logoff" style="display:none" title="Выход">X</a>
+            </div>
+            <div class="cinema">
+                <div class="now-cinema">
+                    <h2>Рекомендуем  <img src="image/ServiceImg/Arrow.png" alt=""></h2>
+                </div>
+
+                <a href='/Home/Movie/53' class="card ">
+                    <div>
+                        <img src=http://kinokrad.tv/uploads/posts/2016-01/1452362150_poster-841371.jpg alt=Нация Z>
+                        <p>Нация Z</p>
+                    </div>
+                </a>
+                <a href='/Home/Movie/51' class="card ">
+                    <div>
+                        <img src=http://kinokrad.tv/uploads/posts/2016-09/1475262301_d5d08b2.jpg alt=Симпсоны>
+                        <p>Симпсоны</p>
+                    </div>
+                </a>
+                <a href='/Home/Movie/50' class="card ">
+                    <div>
+                        <img src=http://kinokrad.tv/uploads/posts/2016-05/1463299110_poster-733493.jpg alt=Сотня>
+                        <p>Сотня</p>
+                    </div>
+                </a>
+                <a href='/Home/Movie/49' class="card ">
+                    <div>
+                        <img src=http://kinokrad.tv/uploads/posts/2016-09/1475095559_25155e4.jpg alt=Южный Парк>
+                        <p>Южный Парк</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="info">
-                <p> ©&nbsp; <a href="#">GidOnline</a> - Твой гид в мире кино!</p>
+                <p> ©&nbsp;<a href='/'>GidOnline</a> - мы самый лучший онлайн кинотеатр!</p>
             </div>
             <div class="info-link">
-                <p><a href="faq.html">Пользователю</a> ♦ <a href="rights.html">Правообладателям</a> ♦ <a href="contact.html">Контакты</a></p>
+                <p>
+                    <a href="/Home/Faq">Пользователю</a> ♦ <a href="/Home/Rights">Правообладателям</a> ♦ <a href="/Home/Contact">Контакты</a>
+                </p>
             </div>
         </div>
     </footer>
+    <div class="btn-top"><a href="#top"><img src="image/ServiceImg/up-arrow.svg" alt=""></a></div>
+    <!--<script src="js/jquery-3.3.1.js"></script>-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
 </body>
 </html>
